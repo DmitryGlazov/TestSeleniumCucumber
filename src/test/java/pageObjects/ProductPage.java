@@ -7,12 +7,12 @@ import org.openqa.selenium.support.ui.Select;
 
 public class ProductPage extends PageObject {
 
-    private final String productPage = "https://www.etsy.com/listing/694890588/fathers-day-fathor-like-a-dad-just-way";
-
-    @FindBy(id = "inventory-variation-select-0")
-    private WebElement colorsSelect;
+    private final String productPage = "https://www.etsy.com/listing/696659280/fathor-like-a-dad-just-way-mightier-see";
 
     @FindBy(id = "inventory-variation-select-1")
+    private WebElement colorsSelect;
+
+    @FindBy(id = "inventory-variation-select-0")
     private WebElement sizesSelect;
 
     @FindBy(xpath = "//form[@class=\"add-to-cart-form\"]")

@@ -36,7 +36,7 @@ public class CartPageSteps {
 
     @Then("See increased price")
     public void seeIncreasedPrice() {
-        wait.until(ExpectedConditions.textToBePresentInElement(cartPage.getTotalPrice(), "50.27"));
+        wait.until(ExpectedConditions.textToBePresentInElement(cartPage.getTotalPrice(), "54.96"));
     }
 
     @Then("See empty cart message")

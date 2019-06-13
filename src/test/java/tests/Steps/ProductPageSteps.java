@@ -30,13 +30,13 @@ public class ProductPageSteps {
 
     @When("Choose color")
     public void chooseColor() {
-        productPage.selectColor("Berry");
+        productPage.selectColor("Black");
     }
 
     @When("Choose size")
     public void chooseSize() {
         wait.until(ExpectedConditions.elementToBeClickable(productPage.getSizesSelect()));
-        productPage.selectSize("Unisex T-Shirt - M (US$18.89)");
+        productPage.selectSize("T-Shirt - M (US$19.99)");
     }
 
     @When("Click add to cart button")
