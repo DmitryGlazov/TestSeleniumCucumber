@@ -2,4 +2,5 @@
 
 **How To Run**
 
-mvn test -Dtest=Runner
+docker build --tag=seleniumcucumber .
+docker run seleniumcucumber
