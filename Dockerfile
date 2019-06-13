@@ -12,12 +12,6 @@ RUN apt-get update -qqy && apt-get install -y wget \
     default-jdk \
     maven
 
-#RUN apt update && apt install -y google-chrome-stable
-
-#RUN apt-get install -y xvfb \
-#    default-jdk \
-#    maven
-
 ENTRYPOINT (Xvfb :0 -screen 0 1920x1080x24 &) && \
            export DISPLAY=:0 && \
            mvn test -Dtest=Runner
